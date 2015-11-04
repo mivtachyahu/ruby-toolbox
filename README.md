@@ -28,6 +28,9 @@ puts puts out a string ;)
 
 abort("string") quits with error message
 
+code=ARGV[0]
+code.nil? ? abort("Usage - provide a code as an argument") : nil
+
 .class and .methods are useful in irb to check for things you can do on an object.
 IF ALL ELSE FAILS GO ITERATIVE / OLD FASHIONED
 SOMETIMES YOU CAN DO SOMETHING CLEVER BY REDEFINING CLASSES - BUT ONLY IF YOU HAVE TIME!
